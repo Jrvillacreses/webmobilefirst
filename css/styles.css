@@ -9,6 +9,7 @@
 
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -110,6 +111,7 @@ body {
 }
 .header__nav ul li a{
     text-decoration: none;
+    color:#000;
 }
 .menu-toggle:checked ~ .header__nav {
     display: flex;
@@ -166,7 +168,7 @@ body {
 /* Imagen2 (en ::before) */
 .hero-index::before {
     background-image: url('../img/illust_2.JPEG');
-    animation: fadeImg2 15s infinite;
+    animation: fadeImg2 15s ease infinite;
     background-size: contain;
     background-position-y: top;
 }
@@ -174,7 +176,7 @@ body {
 /* Imagen3 (en ::after) */
 .hero-index::after {
     background-image: url('../img/illust_6.JPEG');
-    animation: fadeImg3 15s infinite;
+    animation: fadeImg3 15s ease infinite;
     background-size: contain;
     background-position-y: top;
 }
@@ -639,31 +641,31 @@ contacto__grupo input,
 /* CARTAS */
 
 #devil{
-    background-image: url(/img/thedevil.JPG);
+    background-image: url(../img/thedevil.JPG);
 }
 
 #lovers{
-    background-image: url(/img/thelovers.JPG);
+    background-image: url(../img/thelovers.JPG);
 }
 
 #hanged{
-    background-image: url(/img/hangedman.JPG);
+    background-image: url(../img/hangedman.JPG);
 }
 
 #justice{
-    background-image: url(/img/justice.JPG);
+    background-image: url(../img/justice.JPG);
 }
 
 #fool{
-    background-image: url(/img/thefool.JPG);
+    background-image: url(../img/thefool.JPG);
 }
 
 #death{
-    background-image: url(/img/death.JPG);
+    background-image: url(../img/death.JPG);
 }
 
 #moon{
-    background-image: url(/img/themoon.jpg);
+    background-image: url(../img/themoon.jpg);
 }
 
 /* Efecto flip al marcar el checkbox */
@@ -873,3 +875,15 @@ a:visited {
 .centrado a:visited{
     color: #fff;
 }
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
