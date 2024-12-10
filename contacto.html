@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contacto - Portfolio Artista</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" 
+      rel="stylesheet"
+    >
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="index.html"><img src="./img/logo.PNG"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="header__menu-btn">Menú</label>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="barajas.html">Barajas de cartas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero--contacto">
+            <div class="hero__container">
+                <h1 class="hero__title">Contacto</h1>
+                <p class="hero__subtitle">¿Tienes alguna pregunta o propuesta? ¡Hablemos!</p>
+            </div>
+        </section>
+
+        <section class="contacto-page">
+            <div class="contacto-page__container">
+                <h2 class="section-title">Envíame un mensaje</h2>
+                <form class="contacto__form" action="#" method="POST">
+                    <div class="contacto__grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    </div>
+                    <div class="contacto__grupo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email..." required>
+                    </div>
+                    <div class="contacto__grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2024 Jrvillacreses. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

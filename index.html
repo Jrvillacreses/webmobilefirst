@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio Artista - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" 
+      rel="stylesheet"
+    >
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo">
+                <a href="index.html"><img src="./img/logo.PNG"></a>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="header__menu-btn">Menú</label>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                    <li><a href="barajas.html">Barajas de cartas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-index">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h1 class="hero__title">JRVILLACRESES</h1>
+                    <p class="hero__subtitle">Artista plástico e Ilustrador</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria-resumen" id="galeria">
+            <h2 class="section-title">Obras Destacadas</h2>
+            <div class="galeria__grid">
+                <div class="galeria__item">
+                    <img src="img/somnus/FondoBlancop2.jpg" alt="Obra 1">
+                    <div class="obra-info-overlay">
+                        <h3>"La entrada"</h3>
+                        <p>2023</p>
+                    </div>
+                </div>
+                <div class="galeria__item">
+                    <img src="img/illust_4.JPEG" alt="Obra 2">
+                    <div class="obra-info-overlay">
+                        <h3>"Death Blossom"</h3>
+                        <p>2022</p>
+                    </div>
+                </div>
+                <div class="galeria__item">
+                    <img src="img/illust_7.JPEG" alt="Obra 3">
+                    <div class="obra-info-overlay">
+                        <h3>"Un Desinfectante"</h3>
+                        <p>2021</p>
+                    </div>
+                </div>
+            </div>
+            <p class="centrado"><a href="galeria.html" class="enlace-destacado">Ver Galería Completa</a></p>
+        </section>
+        <div class="bg-piscis">
+            <img class="piscis" src="img/IMG_2106.JPG">
+        </div>
+                <!-- Sección Sobre mí Resumen -->
+        <section class="sobre-mi-resumen" id="sobre-mi">
+            <h2 class="section-title">Sobre Mí</h2>
+            <div class="sobre-mi-resumen__content">
+                <div class="sobre-mi-resumen__img">
+                    <img src="img/IMG_6197.jpeg" alt="Foto del artista" />
+                </div>
+                <div class="sobre-mi-resumen__texto">
+                    <p>
+                        Como artista, mi trabajo se nutre de las formas orgánicas y las emociones humanas.  
+                        Cada trazo y color en mis obras busca capturar instantes, sensaciones y atmósferas que inviten a la reflexión.
+                    </p>
+                    <p>
+                        Mi estilo evoluciona constantemente, integrando influencias clásicas con enfoques contemporáneos,  
+                        para crear un diálogo entre la pieza y el espectador.
+                    </p>
+                    <p class="centrado"><a href="sobre-mi.html" class="enlace-destacado">Más sobre mí</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto-resumen" id="contacto">
+            <h2 class="section-title">Contacto</h2>
+            <p class="centrado">¿Tienes alguna pregunta o propuesta? ¡Hablemos!</p>
+            <p class="centrado"><a href="contacto.html" class="enlace-destacado">Contactar</a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2024 Jrvillacreses. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

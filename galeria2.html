@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Galería - Portfolio Artista</title>
+    <link rel="stylesheet" href="css/galeria.css" />
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" 
+      rel="stylesheet"
+    >
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo"><a href="index.html">[Logo/Nombre]</a></div>
+            <div class="header__menu-btn">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="index.html#galeria">Obras</a></li>
+                <li><a href="index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="galeria.html" class="active-link">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección principal de la Galería -->
+        <section class="galeria-page">
+            <div class="galeria-page__header">
+                <h1 class="section-title">Galería Completa</h1>
+                <p class="galeria-page__description">
+                    Explora todas las obras. Filtra por categoría y descubre diferentes series artísticas.
+                </p>
+            </div>
+
+            <!-- Radios para filtrado (ahora fuera del .galeria-page__filters, pero dentro del mismo section) -->
+            <input type="radio" name="filter" id="filter-all" checked>
+            <input type="radio" name="filter" id="filter-pintura">
+            <input type="radio" name="filter" id="filter-escultura">
+            <input type="radio" name="filter" id="filter-fotografia">
+
+            <!-- Filtros -->
+            <div class="galeria-page__filters">
+                <label for="filter-all" class="filter-btn">Todos</label>
+                <label for="filter-pintura" class="filter-btn">Pintura</label>
+                <label for="filter-escultura" class="filter-btn">Escultura</label>
+                <label for="filter-fotografia" class="filter-btn">Fotografía</label>
+            </div>
+
+            <!-- Grid de obras con clases según categoría -->
+            <div class="galeria-page__grid">
+                <div class="galeria-page__item category-pintura">
+                    <img src="img/obra1.jpg" alt="Obra 1 - Pintura">
+                    <div class="obra-info">
+                        <h3>Obra #1</h3>
+                        <p>Pintura acrílica sobre lienzo</p>
+                    </div>
+                </div>
+
+                <div class="galeria-page__item category-escultura">
+                    <img src="img/obra2.jpg" alt="Obra 2 - Escultura">
+                    <div class="obra-info">
+                        <h3>Obra #2</h3>
+                        <p>Escultura en mármol</p>
+                    </div>
+                </div>
+
+                <div class="galeria-page__item category-fotografia">
+                    <img src="img/obra3.jpg" alt="Obra 3 - Fotografía">
+                    <div class="obra-info">
+                        <h3>Obra #3</h3>
+                        <p>Fotografía digital</p>
+                    </div>
+                </div>
+
+                <div class="galeria-page__item category-pintura">
+                    <img src="img/obra4.jpg" alt="Obra 4 - Pintura">
+                    <div class="obra-info">
+                        <h3>Obra #4</h3>
+                        <p>Pintura al óleo</p>
+                    </div>
+                </div>
+
+                <div class="galeria-page__item category-pintura">
+                    <img src="img/obra5.jpg" alt="Obra 5 - Pintura">
+                    <div class="obra-info">
+                        <h3>Obra #5</h3>
+                        <p>Pintura mixta</p>
+                    </div>
+                </div>
+
+                <div class="galeria-page__item category-escultura">
+                    <img src="img/obra6.jpg" alt="Obra 6 - Escultura">
+                    <div class="obra-info">
+                        <h3>Obra #6</h3>
+                        <p>Escultura metálica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; 2024 Nombre del Artista. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

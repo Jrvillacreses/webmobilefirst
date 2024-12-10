@@ -1,0 +1,264 @@
+:root {
+    --font-body: 'Montserrat', sans-serif;
+    --color-text: #000;
+    --color-bg: #fff;
+    --color-accent: #333;
+    --color-light: #f5f5f5;
+    font-size: 16px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background: var(--color-bg);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* Header y Navegación (reutilizado) */
+.header {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__logo a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.header__menu-btn {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: var(--color-text);
+    margin: 0.3rem 0;
+}
+
+.header__nav {
+    display: none;
+    background: var(--color-bg);
+}
+
+.header__nav ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__nav li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.active-link {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Hero sobre-mi (similar al hero de la index) */
+.hero--sobre-mi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: var(--color-light);
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero__title {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.hero__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* Sección sobre mí page */
+.sobre-mi-page {
+    padding: 2rem 1rem;
+    background: var(--color-bg);
+}
+
+.sobre-mi-page__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sobre-mi-page__imagen img {
+    width: 80%;
+    max-width: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.sobre-mi-page__texto {
+    max-width: 90%;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Influencias */
+.sobre-mi-influencias {
+    padding: 2rem 1rem;
+    background: var(--color-light);
+}
+
+.sobre-mi-influencias__container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.sobre-mi-influencias__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.sobre-mi-influencias__item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.sobre-mi-influencias__item p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Reconocimientos / Exhibiciones */
+.sobre-mi-reconocimientos {
+    padding: 2rem 1rem;
+    background: var(--color-bg);
+}
+
+.sobre-mi-reconocimientos__container {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre-mi-reconocimientos__lista {
+    margin-top: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sobre-mi-reconocimientos__lista li {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Footer (reutilizado) */
+.footer {
+    padding: 1rem;
+    background: var(--color-light);
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .header__nav {
+        display: flex;
+        justify-content: center;
+        position: static;
+    }
+
+    .header__nav ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .sobre-mi-page__container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-mi-page__imagen img {
+        width: 12rem;
+    }
+
+    .sobre-mi-page__texto {
+        max-width: 30rem;
+        text-align: left;
+    }
+
+    .sobre-mi-influencias__grid {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero__title {
+        font-size: 3rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.25rem;
+    }
+}
